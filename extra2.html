@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the FashionZ Team!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif; 
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(to bottom right, #f0f0f0, #c9c9c9); 
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 500px;
+        }
+
+        .container h1 {
+            color: #333;
+            font-size: 2rem; /* Reduced font size */
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .container h2 {
+            color: #666;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .container p {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+        .container{
+            background-image:url('https://i.pinimg.com/736x/84/38/d2/8438d2225a909c896bf052af51686cf1.jpg');
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width:30%;
+        }
+
+        .btn:hover {
+            background-color: #3e8e41;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+        }
+        body{
+font-family:'Arial',sans-serif;
+background-color:#e5c7b4;
+color:#333;
+line-height:1.6;
+
+}
+.container2{
+width:40%;
+margin: 30px auto;
+background-image:url('https://i.pinimg.com/736x/84/38/d2/8438d2225a909c896bf052af51686cf1.jpg');
+padding:25px;
+border-radius:10px;
+box-shadow:50px 50px 50px rgba(200,20,5,0.1);
+opacity: 1.2;
+
+}
+h1{
+text-align:center;
+color:black;
+margin-bottom:30px;
+}
+h2{
+color:black;
+border-bottom:2px solid black;
+padding-bottom:10px;
+margin-bottom:20px;
+}
+label{
+display:block;
+margin-top:15px;
+font-weight:bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+input[type="file"]{
+width:100%;
+padding:10px;
+margin-top:5px;
+border-radius:5px;
+outline: none;
+background-color:#eef4ee;
+font-size:16px;
+
+
+box-sizing:border-box;
+}
+input[type="file"]{
+padding:5px;
+}
+input[type="file"]:hover,
+select:hover,
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+input[type="number"]:hover
+{
+border-color:#ff66ff;
+}
+input[type="submit"],
+button{
+margin-top:20px;
+padding:12px 20px;
+
+color:black;
+
+font-weight:bold;
+border-radius:5px;
+cursor:pointer;
+font-size:16px;
+transition:background-color 0.3s;
+width:120px;
+
+}
+input[type="submit"]:hover,
+button:hover{
+background-color:#45a049;
+border-radius:20px;
+}
+
+input[type="submit"]
+{
+margin-left:83%;
+}
+
+img{
+margin-top:10px;
+
+border-radius:5px;
+padding:5px;
+}
+#profilePreview,#signaturePreview{
+margin-top:15px;
+display:block;
+max-width:150px;
+max-height:150px;
+}
+#next1{
+    margin-left:80%;
+}
+#next2{
+    margin-left:66%;
+  
+}
+
+#submits{
+    margin-left:66%;
+}
+.but_container{
+    display:flex;
+}
+
+.step{
+display:none;
+}
+#step1{
+display:block;
+}
+.modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding-top: 100px;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 40%;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .modal-content button {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .confirm-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .cancel-btn {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .modal-content h2 {
+            font-size: 20px;
+            color: #333;
+        }
+		h3{
+			text-align:center;
+		}
+
+
+	
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Join the FashionZ Revolution!</h1> 
+        <h2>Be a Part of the Future of Online Fashion</h2>
+        <p>FashionZ is seeking passionate and talented individuals to join our dynamic team. We're building an exciting e-commerce platform that's revolutionizing the way people shop for fashion. If you're creative, driven, and eager to contribute to a fast-growing company, we want to hear from you!</p>
+        <button class="btn" id="registerBtn">Start Your Application</button>
+    </div>
+
+    <!-- Hidden Application Form -->
+    <div class="container2" id="formContainer" style="display:none;">
+        <h1>FASHON-Z JOB APPLICATION</h1>
+<form name="student" onsubmit="return display(event)" method="get" >
+<div class="step" id="step1">
+<h2>Basic Information</h2>
+<label for="firstName">First Name:</label>
+<input type="text" id="firstName" name="first_name" required>
+<label for="middleName">Middle Name:</label>
+<input type="text" id="middleName" name="middle_name">
+<label for="lastName">Last Name:</label>
+<input type="text" id="lastName" name="lastname" required>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+<label for="phone" >Phone:</label>
+<input type="tel" id="phone" name="phone" required>
+<label for="gender">Gender:</label>
+<select id="gender" name="gender" required>
+<option value="" disabled selected>Select Gender</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
+<option value="other">Other</option>
+</select>
+<label for="city" >City:</label>
+<input type="text" id="city" required>
+<label for="state">State:</label>
+<input type="text" id="state" required>
+
+<button type="button"  id="next1"
+onclick="nextStep(2)">Next</button>
+</div>
+<!---step2:Educational Information-->
+<div class="step" id="step2" style="display:none;"  >
+<h2>Educational Information</h2>
+<h3>10th Grade</h3>
+<label for="tenthMaths">School Name:</label>
+<input type="text" id="schoolname" name="tenth_maths" required>
+<label for="tenthScience">Total Marks:</label>
+<input type="number" id="totalmarks" name="tenth_science" required>
+<label for="tenthTotal">CGPA:</label>
+<input type="number" id="cgpa" name="tenth_total" required>
+<h3>12th Grade</h3>
+<label for="interMaths" >University Name:</label>
+<input type="text" id="unvname" name="inter_maths" required>
+<label for="interScience">Total marks:</label>
+<input type="number" id="totalmarks_un" name="inter_science" required>
+<label for="interTotal">CGPA:</label>
+<input type="number" id="cgpa_un" name="inter_total" required>
+<h3>Degree</h3>
+<label for="degreecollege">College Name:</label>
+<input type="text" id="degreecollege" name="degree_college" required>
+<label for="degreeUniversity">University Name:</label>
+<input type="text" id="degreeUniversity" name="degree_university" required>
+<label for="degreeTotal">Total Marks Obtained:</label>
+<input type="number" id="degreeTotal" name="degree_total" required>
+<div class="but_container">
+<button type="button"  class="b2" 
+onclick="prevstep(1)">Back</button>
+<button type="button" class="n1" id="next2"
+onclick="nextStep(3)">Next</button>
+</div>
+</div>
+<!---step3:skills-->
+<div class="step" id="step3" style="display:none" >
+	
+<h3>Select your skills:</h3>
+<p>FronEnd Skills:</p>
+<label>
+  <input type="checkbox" name="skills" value="HTML"> HTML
+</label>
+
+<label>
+  <input type="checkbox" name="skills" value="CSS"> CSS
+</label>
+<label>
+  <input type="checkbox" name="skills" value="JavaScript"> JavaScript
+</label>
+<label>
+	<input type="checkbox" name="skills" value="Angular"> Angular
+</label>
+<label>
+	<input type="checkbox" name="skills" value="react"> React
+</label>
+
+
+<p>Backend Skills:</p>
+<label>
+	<input type="checkbox" name="skills" value="Python"> Python
+</label>
+  
+<label>
+	<input type="checkbox" name="skills" value="Java"> Java
+</label>
+<label>
+	<input type="checkbox" name="skills" value="php"> PHP
+</label>
+<label>
+	<input type="checkbox" name="skills" value="c"> C
+</label>
+
+
+<div class="but_container">
+	<button type="button"  class="b2" 
+	onclick="prevstep(2)">Back</button>
+	<button type="button" class="n1" id="next2"
+	onclick="nextStep(4)">Next</button>
+	</div>
+</div>
+
+
+<div class="step" id="step4" style="display:none" >
+<h2>Uploads</h2>
+
+<label for="profileImage">Profile Image:</label>
+<input type="file" id="profileImage" name="profile_image" accept="image/*" required onchange="loadImagePreview(this, 'profilePreview')">
+<img id="profilePreview" src="" alt="profilePreview" style="display:none;" width="100px">
+
+<label for="signatureImage">Signature:</label>
+<input type="file" id="signatureImage" name="signature_image" accept="image/*" required onchange="loadImagePreview(this, 'signaturePreview')">
+<img id="signaturePreview" src="" alt="signaturePreview" style="display:none;" width="100px">
+
+<label for="Resume">Resume:</label>
+<input type="file" id="Resume" name="resume" accept="image/*" required>
+<div class="but_container">
+<button type="button" id="submit"
+onclick="prevstep(3)">Back</button>
+<input type="submit" id="submits" value="submit" onclick="submission()">
+</div>
+</div>
+
+ 
+ <div id="confirmationModal" class="modal">
+    <div class="modal-content">
+        <h2>Confirm Your Information</h2>
+        <p id="confirmationText"></p>
+        <button class="confirm-btn" onclick="confirmData()">Confirm</button>
+        <button class="cancel-btn" onclick="cancelData()">Cancel</button>
+    </div>
+</div>
+</form>
+    </div>
+
+    <script>
+        
+        document.getElementById('registerBtn').addEventListener('click', function() {
+            
+            document.querySelector('.container').style.display = 'none';
+            
+            document.getElementById('formContainer').style.display = 'block';
+        });
+        function nextStep(step){
+document.getElementById(`step${step-1}`).style.display='none';
+document.getElementById(`step${step}`).style.display='block';
+}
+function prevstep(step){
+document.getElementById(`step${step+1}`).style.display='none';
+document.getElementById(`step${step}`).style.display='block';
+}
+
+
+function loadImagePreview(input, previewId) {
+    const preview = document.getElementById(previewId);
+    const file = input.files[0];
+    const reader = new FileReader();
+    reader.onload = function(e) {
+        preview.src = e.target.result;
+        preview.style.display = 'block';
+    };
+    reader.readAsDataURL(file);
+}
+
+
+function submission() {
+        
+        const fname = document.getElementById("firstName").value;
+        const lname = document.getElementById("lastName").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+
+        
+        const confirmationText = `
+            <strong>First Name:</strong> ${fname} <br>
+            <strong>Last Name:</strong> ${lname} <br>
+            <strong>Email:</strong> ${email} <br>
+            <strong>Phone:</strong> ${phone}
+        `;
+        document.getElementById("confirmationText").innerHTML = confirmationText;
+
+        
+        document.getElementById("confirmationModal").style.display = "block";
+    }
+
+    function confirmData() {
+        
+        const fname = document.getElementById("firstName").value;
+        const lname = document.getElementById("lastName").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+
+       
+        const params = new URLSearchParams();
+        params.set("firstName", fname);
+        params.set("lastName", lname);
+        params.set("email", email);
+        params.set("phone", phone);
+
+       
+        document.getElementById("confirmationModal").style.display = "none";
+
+        
+    }
+
+    function cancelData() {
+
+        document.getElementById("confirmationModal").style.display = "none";
+        alert("Submission canceled. You can edit your information.");
+    }	
+</script>
+<h1 id="heading"></h1>
+	<table id="t1">
+		<tr>
+			<th id="nameH"></th>
+			<td id="sname"></td>
+		</tr>
+		<tr>
+			<th id="rnoH"></th>
+			<td id="srno"></td>
+		</tr>
+		<tr>
+			<th id="dobH"></th>
+			<td id="sdob"></td>
+		</tr>
+		<tr>
+			<th id="emailh"></th>
+			<td id="semail"></td>
+		</tr>
+		<tr>
+			<th id="phoneh"></th>
+			<td id="sphone"></td>
+		</tr>
+
+        <tr>
+			<th id="genderh"></th>
+			<td id="sgender"></td>
+		</tr>
+		<tr>
+			<th id="cityh"></th>
+			<td id="scity"></td>
+		</tr>
+		<tr>
+			<th id="stateh"></th>
+			<td id="sstate"></td>
+		</tr>
+		<tr>
+			<th id="schlname"></th>
+			<td id="sschlname"></td>
+		</tr>
+		<tr>
+			<th id="schlmarks"></th>
+			<td id="sschlmarks"></td>
+		</tr>
+
+        <tr>
+			<th id="schlcgpa"></th>
+			<td id="sschlcgpa"></td>
+		</tr>
+		<tr>
+			<th id="unname"></th>
+			<td id="sunname"></td>
+		</tr>
+		<tr>
+			<th id="unmarks"></th>
+			<td id="sunmarks"></td>
+		</tr>
+		<tr>
+			<th id="uncgpa"></th>
+			<td id="suncgpa"></td>
+		</tr>
+		<tr>
+			<th id="clgname"></th>
+			<td id="sclgname"></td>
+		</tr>
+        <tr>
+			<th id="clgunv"></th>
+			<td id="sclgunv"></td>
+		</tr>
+		<tr>
+			<th id="clgmarks"></th>
+			<td id="sclgmarks"></td>
+		</tr>
+		<tr>
+			<th id="clgname"></th>
+			<td id="sclgname"></td>
+		</tr>
+
+
+
+	</table>
+	<script>
+		function display()
+		{
+			event.preventDefault()
+			
+
+			let firstName=document.student.firstName.value
+			let middleName=document.student.middleName.value
+			let lastName=document.student.lastName.value
+			let email=document.student.email.value
+			let phone=document.student.phone.value
+
+			let gender=document.student.gender.value
+			let city=document.student.city.value
+			let state=document.student.state.value
+			let schoolname=document.student.schoolname.value
+			let totalmarks=document.student.totalmarks.value
+
+			let cgpa=document.student.cgpa.value
+			let unvname=document.student.unvname.value
+			let totalmarks_un=document.student.totalmarks_un.value
+			let cgpa_un=document.student.cgpa_un.value
+			let degreecollege=document.student.degreecollege.value
+
+			let degreeUniversity=document.student.degreeUniversity.value
+			let degreeTotal=document.student.degreeTotal.value
+			
+
+
+
+
+
+
+
+
+
+
+
+
+			document.getElementById("t1").border="2"
+			document.getElementById("nameH").innerHTML="First Name"
+			document.getElementById("sname").innerHTML=firstName
+
+			document.getElementById("rnoH").innerHTML="Middle Name"
+			document.getElementById("srno").innerHTML=middleName
+
+			document.getElementById("dobH").innerHTML="Last Name"
+			document.getElementById("sdob").innerHTML=lastName
+
+			document.getElementById("emailh").innerHTML="Email"
+			document.getElementById("semail").innerHTML=email
+
+			document.getElementById("phoneh").innerHTML="Mobile Number"
+			document.getElementById("sphone").innerHTML=phone
+
+			
+			document.getElementById("genderh").innerHTML="Gender"
+			document.getElementById("sgender").innerHTML=gender
+
+			document.getElementById("cityh").innerHTML="City"
+			document.getElementById("scity").innerHTML=city
+
+			document.getElementById("stateh").innerHTML="State"
+			document.getElementById("sstate").innerHTML=state
+
+			document.getElementById("schlname").innerHTML="Schoolname"
+			document.getElementById("sschlname").innerHTML=schoolname
+
+			document.getElementById("schlmarks").innerHTML="School Marks"
+			document.getElementById("sschlmarks").innerHTML=totalmarks
+
+
+			document.getElementById("schlcgpa").innerHTML="School CGPA"
+			document.getElementById("sschlcgpa").innerHTML=cgpa
+
+			document.getElementById("unname").innerHTML="University Name"
+			document.getElementById("sunname").innerHTML=unvname
+			
+			document.getElementById("unmarks").innerHTML="University Marks"
+			document.getElementById("sunmarks").innerHTML=totalmarks_un
+
+
+
+			document.getElementById("uncgpa").innerHTML="University CGPA"
+			document.getElementById("suncgpa").innerHTML=cgpa_un
+
+			document.getElementById("clgname").innerHTML="College Name"
+			document.getElementById("sclgname").innerHTML=degreecollege
+
+			document.getElementById("clgunv").innerHTML="University Name"
+			document.getElementById("sclgunv").innerHTML=degreeUniversity
+
+			
+			document.getElementById("clgmarks").innerHTML="DegreeMarks"
+			document.getElementById("sclgmarks").innerHTML=degreeTotal
+
+			return false
+		}
+	</script>
+</body>
+</html>
